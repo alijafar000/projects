@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+* {
+  color: #fff;
+}
+
+body {
+  background-color: #111;
+}
+
+#tasklist::-webkit-scrollbar {
+  display: none;
+}
+
+#tasks::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+
+body {
+  background-color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+#tasklist::-webkit-scrollbar {
+  height: 6px;
+}
+
+#tasklist::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 10px;
+}
+
+#tasklist::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+}
+
+#tasklist::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+@media (max-width: 768px) {
+  #tasklist::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Popup animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+body {
+  background-color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+
+#tasklist::-webkit-scrollbar {
+  height: 8px;
+}
+
+#tasklist::-webkit-scrollbar-track {
+  background: #374151;
+  border-radius: 10px;
+}
+
+#tasklist::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 10px;
+}
+
+#tasklist::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  #tasklist::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Popup animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Text shadow for better readability */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+  }
+}
